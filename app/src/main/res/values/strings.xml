@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">AndroidToolBox</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="frag_principal">Life Cycle of the main fragment</string>
+    <string name="frag_sec">Life Cycle of a second fragment</string>
+    <string name="actOnStart">Actually : Activity onStart</string>
+    <string name="actOnResume">Actually : Activity onResume</string>
+    <string name="actOnStop">Actually : Activity onStop</string>
+    <string name="actOnDestroy">Actually : Activity onDestroy</string>
+    <string name="actOnCreate">Actually : Activity onCreate</string>
+    <string name="voidd"></string>
+    <string name="register">Register</string>
+    <string name="connection">Connection</string>
+    <string name="id">Username</string>
+    <string name="pw">Password</string>
+    <string name="disconnection">Disconnect</string>
+    <string name="hello">Hello</string>
+    
+    <string name="permission">Permissions</string>
+    <string name="signIn">Sign In</string>
+    <string name="textLifeCycleDef">Here are the differents life cycles :\nCreate, \nStart, \nResume, \nPause, \nStop, \nDestroy</string>
+    <string name="titleLifeCycle">The cycle of life :</string>
+    <string name="lifeCycle">Life Cycle</string>
+    <string name="changeFragment">Change</string>
+    <string name="save">Save</string>
+    <string name="webService">Web Service</string>Formulaire
+    <string name="form">Form</string>
+    <string name="fName">First Name</string>
+    <string name="name">Family Name</string>
+    <string name="bDay">Date of Birth</string>
+    <string name="fields_empty">Please fill all fields</string>
+    <string name="printValue">Print values saved</string>
+    <string name="printImage">Print image</string>
+    <string name="clickPhoto">Click the image to change picture</string>
+    <string name="email">eMail</string>
+    <string name="contacts">Contacts</string>
+    <string name="title">Title</string>
+    <string name="location">Location</string>
+
+</resources>

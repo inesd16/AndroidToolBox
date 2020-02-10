@@ -7,29 +7,29 @@
     tools:context=".HomeActivity">
 
     <ImageButton
-        android:id="@+id/button2"
+        android:id="@+id/saveButton"
         android:layout_width="78dp"
         android:layout_height="75dp"
         android:layout_marginStart="93dp"
         android:layout_marginTop="94dp"
         android:background="@drawable/sdcard"
         android:backgroundTint="@color/colorPrimary"
-        app:layout_constraintStart_toEndOf="@+id/button1"
+        app:layout_constraintStart_toEndOf="@+id/lifeCycleButton"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <ImageButton
-        android:id="@+id/button4"
+        android:id="@+id/webServiceButton"
         android:layout_width="78dp"
         android:layout_height="75dp"
         android:layout_marginStart="94dp"
         android:layout_marginTop="29dp"
         android:background="@drawable/download"
         android:backgroundTint="@color/colorPrimary"
-        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintStart_toEndOf="@+id/permissionButton"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <ImageButton
-        android:id="@+id/button3"
+        android:id="@+id/permissionButton"
         android:layout_width="78dp"
         android:layout_height="75dp"
         android:layout_marginStart="76dp"
@@ -40,7 +40,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <ImageButton
-        android:id="@+id/button1"
+        android:id="@+id/lifeCycleButton"
         android:layout_width="78dp"
         android:layout_height="75dp"
         android:layout_marginStart="76dp"
@@ -70,49 +70,32 @@
         android:layout_marginStart="2dp"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="2dp"
-        android:text="Bonjour"
+        android:text="@string/hello"
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="407dp"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="530dp"
-        tools:ignore="MissingConstraints">
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="280dp"
-        android:layout_height="wrap_content"
-        android:hint="hint"
-        tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="485dp"
-        tools:ignore="MissingConstraints" />
-
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
         android:layout_marginTop="8dp"
-        android:text="Cycle de Vie"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button1" />
+        android:text="@string/lifeCycle"
+        app:layout_constraintEnd_toEndOf="@+id/lifeCycleButton"
+        app:layout_constraintStart_toStartOf="@+id/lifeCycleButton"
+        app:layout_constraintTop_toBottomOf="@+id/lifeCycleButton" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="94dp"
-        android:layout_marginTop="9dp"
-        android:text="Sauvegarde"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        android:layout_marginTop="8dp"
+        android:text="@string/save"
+        app:layout_constraintEnd_toEndOf="@+id/saveButton"
+        app:layout_constraintStart_toStartOf="@+id/saveButton"
+        app:layout_constraintTop_toBottomOf="@+id/saveButton" />
 
     <TextView
         android:id="@+id/textView7"
@@ -120,9 +103,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="76dp"
         android:layout_marginTop="9dp"
-        android:text="Permissions"
+        android:text="@string/permission"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/permissionButton" />
 
     <TextView
         android:id="@+id/textView8"
@@ -130,7 +113,22 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="93dp"
         android:layout_marginTop="9dp"
-        android:text="WebService"
-        app:layout_constraintStart_toEndOf="@+id/button3"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        android:text="@string/webService"
+        app:layout_constraintStart_toEndOf="@+id/permissionButton"
+        app:layout_constraintTop_toBottomOf="@+id/webServiceButton" />
+
+    <Button
+        android:id="@+id/disconnection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/disconnection"
+        android:backgroundTint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.939"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
